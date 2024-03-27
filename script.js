@@ -7,7 +7,7 @@ const lastElement = elements[elements.length - 1];
 // Проверяем, найден ли последний элемент
 if (lastElement) {
     // Ваш код обработки последнего элемента
-    alert(lastElement);
+    console.log(lastElement);
 } else {
-    alert('Элемент с классом "text-muted" не найден на странице.');
+    console.log('Элемент с классом "text-muted" не найден на странице.');
 }
