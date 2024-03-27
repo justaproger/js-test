@@ -1,18 +1,17 @@
-// Находим элемент с классом "col-md-12"
-const colElement = document.querySelector('.col-md-12');
+// Найти элемент с классом "footer"
+var footerElement = document.querySelector('.footer');
 
-// Проверяем, найден ли элемент "col-md-12"
-if (colElement) {
-    // Находим элемент с классом "text-muted" внутри элемента "col-md-12"
-    const textMutedElement = colElement.querySelector('.text-muted');
-    
-    // Проверяем, найден ли элемент "text-muted" внутри "col-md-12"
+if (footerElement) {
+    // Если элемент найден, найти внутри него элемент с классом "text-muted"
+    var textMutedElement = footerElement.querySelector('.text-muted');
+
     if (textMutedElement) {
-        // Ваш код обработки найденного элемента
-        console.log(textMutedElement);
+        // Если элемент с классом "text-muted" найден, вы можете с ним что-то сделать
+        console.log("Найден элемент с классом 'text-muted'");
+        // Например, вы можете изменить его текст или стили
     } else {
-        console.error('Элемент с классом "text-muted" внутри ".col-md-12" не найден.');
+        console.log("Элемент с классом 'text-muted' не найден внутри элемента с классом 'footer'");
     }
 } else {
-    console.error('Элемент с классом ".col-md-12" не найден на странице.');
+    console.log("Элемент с классом 'footer' не найден");
 }
